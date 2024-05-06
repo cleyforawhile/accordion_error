@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <!--Bootstrap é um Framework front end
+    Framework é basecamente uma porção de códigos que alguém já escreveu
+e através do bootstrap temos alguns componentes que podemos estar utilizando
+como botões, formulários, campos de alertas
+Então o bootstrap fornece todo esse conjunto de componentes para criarmos um site
+a partir de um código feito por outra pessoa..,-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css
+    ">
+</head> <!--Aula 02 - Grid-->
+
+<!--Sistema de Grid no Bootstrap, o bootstrap trabalha em 12 colunas e para criarmos precisamos criar
+um container-->
+<body> 
+    <h1>Olá Bootstrap</h1>
+    <div class="container"> <!--Aqui criei uma div chamada container-->
+        <div class="row"> <!--Também tem a classe linha, fazemos isso com ".rom"-->
+            <div class="col-8 col-lg-8 g-0"> <!--g-0 tira o padding, o espaçamento que aparece no site-->
+                <h2>Destaque</h2>
+            </div> 
+            <div class="col-sm-12 col-lg-4"> <!--"col-lg-8-" para uma tela grande
+            quando colocamos lg é a largura, a partir de 972px de largura--> 
+                <h2>Barra Lateral</h2>
+            </div>
+            <div class="col-sm-12 col-lg-4"> 
+                Coluna #3
+            </div>
+            <div class="col">
+                Coluna #4
+            </div>
+            <div class="col"> 
+                Coluna #5
+            </div>
+        </div>
+    </div>
+    <!-- .container>.row>.col*5>img+h3 assim vai criar várias colunas
+        ou estrutura personalizada personalizada-->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img src="https://via.placeholder.com/180x180" alt="">
+                <h3>Produto</h3>
+            </div>
+            <div class="col">
+                <img src="https://via.placeholder.com/180x180" alt="">
+                <h3>Produto</h3>
+            </div>
+            <div class="col">
+                <img src="https://via.placeholder.com/180x180" alt="">
+                <h3>Produto</h3>
+            </div>
+            <div class="col">
+                <img src="https://via.placeholder.com/180x180" alt="">
+                <h3>Produto</h3>
+            </div>
+            <div class="col">
+                <img src="https://via.placeholder.com/180x180" alt="">
+                <h3>Produto</h3>
+            </div>
+        </div>
+    </div>
+    </div>
+    <br />
+    <br />
+    <br />
+
+    <!--Desenvolva Tipografia-->
+    <h1 class="display-2
+    ">Teste</h1>
+    <p class="h6">
+        <mark>Texto em destaque</mark>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quod minus repudiandae iusto, pariatur magnam cumque numquam eveniet alias, neque provident. Impedit placeat eum blanditiis temporibus dolore ex quisquam natus!
+    </p>
+    <br />
+    <br />
+    <br />
+
+    <!--Desenvolva Tabelas-->
+    <table class="table table-info"> <!--para adicionr tabela-->
+<!--Para adicionar uma estilização no bootstrap na tabela
+com a classe "table
+<table class="table">"
+    table-primary vai estilizar o background da tabela, assim como secondary e por aí vai
+e tem outros como table-sucess, table-dangerous, warning, info, light, dark
+tudo isso é chamado de sufixo.-->
+
+
+        <caption>Tabela de produtos</caption> <!--para adicionar legenda da tabela-->
+        <thead> <!--cabeçalho-->
+            <th> <!-- para adicionar a coluna do cabeçalho-->
+                Nome do produto
+                <th>Preço Original</th>
+                <th>Preço atual</th>
+                <th>Desconto</th>
+        </thead>
+        <tbody> <!--Criar o corpo da tabela-->
+            <tr> 
+                <td>Iphone 13</td> <!--Primeira coluna-->
+               <td>R$ 7.000</td>
+               <td>R$ 5.000</td>
+               <td>R$ 2.000</td>
+            </tr>
+            <tr> 
+                <td>Iphone 13</td> <!--Primeira coluna-->
+                <td>R$ 7.000</td>
+                <td>R$ 5.000</td>
+                <td>R$ 2.000</td>
+             </tr>
+             <tr> 
+                <td>Iphone 13</td> <!--Primeira coluna-->
+                <td>R$ 7.000</td>
+                <td>R$ 5.000</td>
+                <td>R$ 2.000</td>
+             </tr>
+        </tbody>
+    </table>
+    <br />
+    <br />
+    <br />
+        <!--Desenvolva Botões-->
+        <!--Aqui vou adicionar estilo-->
+    <body>
+        <button class="btn btn-warning">Clique aqui</button> <!--Para ativar o designe do bootstrap, 
+            colocamos a classe
+        btn no button-->
+
+        <!--Temos variações de botões
+        <button class="btn btn-primary"
+    primary, secondary, success, danger, warning, info, light,dark e link-->
+    </body>
+    <body> <!--E aqui a borda-->
+        <button class="btn btn-outline-dark">Clique aqui 2</button> <!--Para ativar o designe do bootstrap, 
+            colocamos a classe
+        btn no button-->
+
+        <!--Temos variações de botões
+        <button class="btn btn-outline-primary"
+    primary, secondary, success, danger, warning, info, light,dark e link
+
+Podemos também aumentar o tamanho do botão com btn-lg (large) btn-md(medium) btn-sm(small)-->
+    </body>
+    <br />
+    <br />
+    <br />
+<!--Desenvolva Accordions-->
+<body>
+    <div class="accordion">
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <button class="accordion-button">
+                Pergunta.
+            </button>
+        </div>
+        <div class="accordion-collapse collapse show">
+            <div class="accordion-body"></div>
+        </div>
+    </div>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
